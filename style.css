@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'norse-bold';
+    src: url('Norse-Bold.otf');
+}
+
+:root {
+    --left-marg: 30px;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: ghostwhite;
+    justify-content: center;
+}
+
+legend {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+label {
+    font-size: .8rem;
+}
+
+div > p, button {
+    margin-left: var(--left-marg);
+}
+
+button {
+    padding: 10px 30px;
+    border-radius: 7px;
+    border-style: none;
+    background-color: green;
+    color: white;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+p > a {
+    text-decoration: none;
+    color: green;
+}
+
+.bg {
+    position: relative;
+}
+
+.banner > img {
+    max-height: 200px;
+}
+
+.banner > p {
+    font-family: 'norse-bold';
+    font-size: 5rem;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+.banner-bg {
+    width: 640px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    top: 170px;
+    opacity: .50;
+}
+
+.credit {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    color: white;
+}
+
+.credit > a {
+    color: white;
+}
+
+.right {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.form > * {
+    margin-left: var(--left-marg);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.form {
+    background-color: white;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 50px;
+}
