@@ -14,7 +14,7 @@
 body {
     display: flex;
     background-color: ghostwhite;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 legend {
@@ -23,7 +23,7 @@ legend {
 }
 
 label {
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 div > p, button {
@@ -34,17 +34,33 @@ button {
     padding: 10px 30px;
     border-radius: 7px;
     border-style: none;
-    background-color: green;
+    background-color: #596D48;
     color: white;
+    box-shadow: 2px 2px 2px gray;
 }
 
 input {
     margin-bottom: 10px;
+    border-color: #E5E7EB;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:focus {
+    border-color: blue;
 }
 
 p > a {
     text-decoration: none;
-    color: green;
+    color: #596D48;
 }
 
 .bg {
@@ -95,7 +111,7 @@ p > a {
     margin-bottom: auto;
 }
 
-.form > * {
+.container > * {
     margin-left: var(--left-marg);
 }
 
@@ -103,8 +119,10 @@ p > a {
     font-weight: bold;
 }
 
-.form {
+.container {
+    margin-left: auto;
     background-color: white;
+    box-shadow: 1px 1px 5px gray;
 }
 
 .input {
@@ -114,6 +132,14 @@ p > a {
 
 .row {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     gap: 50px;
+}
+
+.error {
+    font-size: .7rem;
+    color: red;
+    margin: 0px;
+    margin-top: -10px;
+    margin-bottom:20px;
 }
